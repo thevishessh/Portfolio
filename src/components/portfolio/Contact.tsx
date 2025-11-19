@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink, Download } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -114,6 +114,12 @@ const Contact = () => {
                 <a href="https://linkedin.com/in/visheshrivastava" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4" />
                   Connect on LinkedIn
+                </a>
+              </Button>
+              <Button size="lg" variant="outline" className="gap-2" asChild>
+                <a href="/resume.pdf" download="Vishesh_Srivastava_Resume.pdf">
+                  <Download className="w-4 h-4" />
+                  Download Resume
                 </a>
               </Button>
             </div>
