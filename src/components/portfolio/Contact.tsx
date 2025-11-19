@@ -29,13 +29,13 @@ const Contact = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/visheshrivastava",
-      link: "https://linkedin.com/in/visheshrivastava",
+      link: "https://www.linkedin.com/in/vishesh-srivastava-b989312a8/",
     },
     {
       icon: Github,
       label: "GitHub",
       value: "github.com/visheshsrivastava",
-      link: "https://github.com/visheshsrivastava",
+      link: "https://github.com/thevishessh",
     },
   ];
 
@@ -111,7 +111,7 @@ const Contact = () => {
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="gap-2" asChild>
-                <a href="https://linkedin.com/in/visheshrivastava" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/vishesh-srivastava-b989312a8/" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4" />
                   Connect on LinkedIn
                 </a>
@@ -127,7 +127,7 @@ const Contact = () => {
         </Card>
 
         <p className="text-center text-muted-foreground mt-12">
-          Built with React, TypeScript, and Tailwind CSS
+          Designed & Developed by Vishesh Srivastava
         </p>
       </div>
     </section>
