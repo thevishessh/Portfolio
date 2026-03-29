@@ -4,7 +4,6 @@ import { GraduationCap, Award, Trophy } from "lucide-react";
 const Education = () => {
   const achievements = [
     "GitHub Copilot Fundamentals Certification",
-    "Oracle Cloud Foundations Certification",
     "Data Structures & Algorithms With JAVA",
   ];
 

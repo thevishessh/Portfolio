@@ -117,7 +117,7 @@ const Contact = () => {
                 </a>
               </Button>
               <Button size="lg" variant="outline" className="gap-2" asChild>
-                <a href="/Vishesh.pdf" download="Vishesh.pdf">
+                <a href="/_Resume.pdf" download="Vishesh.pdf">
                   <Download className="w-4 h-4" />
                   Download Resume
                 </a>

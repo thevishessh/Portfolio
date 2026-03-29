@@ -1,33 +1,33 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Database, ShoppingCart, TrendingUp } from "lucide-react";
+import { CarFront, Database, Mail, ShoppingCart, TrendingUp } from "lucide-react";
 
 const Projects = () => {
   const projects = [
     {
-      title: "JournalApp",
-      subtitle: "Spring Boot + MongoDB",
-      icon: Database,
+      title: "AI Email Reply Generator",
+      subtitle: "Spring Boot, MongoDB, React.js",
+      icon: Mail,
       description:
-        "Developed a scalable JournalApp using Spring Boot, featuring 15+ REST APIs, JWT auth, and an optimized MySQL schema.",
+        "Developing a full-stack AI-powered Email Reply Generator using React.js, Spring Boot, and MongoDB, integrating Google Gemini API with RESTful APIs and a responsive UI.",
       highlights: [
-        "Handled 5,000+ test entries with 99% API reliability",
-        "Reduced fetch time by 30% through query indexing",
-        "Improved data design for better performance",
+        "Developing real-time AI responses for better user interaction.",
+        "Optimizing MongoDB queries and implementing JWT authentication.",
+        "Building a scalable component-based architecture with dynamic state management.",
       ],
-      technologies: ["Spring Boot", "MongoDB", "JWT", "REST API", "MySQL"],
+      technologies: ["React.js", "Spring Boot", "MongoDB", "JWT", "REST API", "MySQL"],
       gradient: "from-blue-500 to-cyan-500",
     },
     {
-      title: "Amazon Frontend Clone",
+      title: "BMW Website Replica",
       subtitle: "React.js Application",
-      icon: ShoppingCart,
+       icon: CarFront,
       description:
-        "Built a fully responsive Amazon-style frontend using React.js with 15+ reusable components, dynamic routing, and optimized rendering.",
+        "Built a fully responsive BMW website replica using React.js with 15+ reusable components, dynamic routing, lazy loading, and optimized rendering for a seamless user experience.",
       highlights: [
-        "15+ reusable React components",
-        "Dynamic routing and state management",
-        "35% faster over 10,000+ mock records",
+        "Improved app performance by 35% with efficient state management.",
+        "Used code splitting for faster loading.",
+        "Optimized rerendering for better performance.",
       ],
       technologies: ["React.js", "JavaScript", "CSS", "Component Design"],
       gradient: "from-orange-500 to-pink-500",

@@ -19,13 +19,6 @@ const Skills = () => {
       bg: "bg-green-500/10",
     },
     {
-      title: "Cloud Platforms",
-      icon: Cloud,
-      skills: ["Oracle Cloud Foundation", "AWS (Basic)"],
-      color: "text-purple-500",
-      bg: "bg-purple-500/10",
-    },
-    {
       title: "Developer Tools",
       icon: Wrench,
       skills: ["Git", "GitHub", "Postman", "VS Code", "IntelliJ IDEA", "Co-Pilot", "Bolt"],
