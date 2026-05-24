@@ -6,16 +6,16 @@ const Projects = () => {
   const projects = [
     {
       title: "UPI Offline Mesh",
-      subtitle: "Spring Boot, Cryptography RSA/AES-GCM, Mesh Gossip",
+      subtitle: "Spring Boot, Cryptography (RSA + AES), Mesh Network",
       icon: WifiOff,
       description:
-        "Designed and built a deferred settlement mesh network backend that securely routes offline UPI payments device-to-device via simulated Bluetooth/WiFi Direct until connectivity is reached.",
+        "A Spring Boot backend that demonstrates offline UPI payments routed through a Bluetooth-style mesh network, allowing transactions to hop device-to-device until they reach internet connectivity.",
       highlights: [
-        "Built secure hybrid cryptography (RSA-OAEP + AES-256-GCM) protecting payment data across untrusted intermediate carrier nodes.",
-        "Engineered nanosecond-level double-spend prevention using atomic compare-and-set idempotency filters on ciphertext hashes.",
-        "Created a complete software-simulated network gossip protocol with virtual devices, TTL routing, and a dark dashboard UI.",
+        "Implemented hybrid encryption (RSA + AES-GCM) to keep transaction data private and secure while traveling across intermediate user devices.",
+        "Built idempotency controls using ciphertext hashing to prevent double-spending and ensure each payment settles exactly once.",
+        "Created a software-simulated network gossip protocol with an interactive web dashboard to visualize hops and uploads.",
       ],
-      technologies: ["Spring Boot 3.x", "Java 17", "AES-GCM / RSA", "Gossip Protocol", "H2 Database", "Thymeleaf"],
+      technologies: ["Spring Boot", "Java 17", "Cryptography (RSA/AES)", "Mesh Networking", "H2 Database", "Thymeleaf"],
       gradient: "from-emerald-500 to-green-500",
       githubUrl: "https://github.com/thevishessh/UPI-without-internet",
     },
