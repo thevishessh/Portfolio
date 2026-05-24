@@ -9,11 +9,11 @@ const Projects = () => {
       subtitle: "Spring Boot, Cryptography (RSA + AES), Mesh Network",
       icon: WifiOff,
       description:
-        "A Spring Boot backend that demonstrates offline UPI payments routed through a Bluetooth-style mesh network, allowing transactions to hop device-to-device until they reach internet connectivity.",
+        "Built a Spring Boot backend simulating offline UPI payments over a peer-to-peer mesh network, where transactions hop device-to-device until reaching internet connectivity.",
       highlights: [
-        "Implemented hybrid encryption (RSA + AES-GCM) to keep transaction data private and secure while traveling across intermediate user devices.",
-        "Built idempotency controls using ciphertext hashing to prevent double-spending and ensure each payment settles exactly once.",
-        "Created a software-simulated network gossip protocol with an interactive web dashboard to visualize hops and uploads.",
+        "Implemented hybrid encryption (RSA + AES-GCM) to secure transaction payloads across untrusted intermediate nodes.",
+        "Added idempotency using ciphertext hashing to prevent double-spending and ensure exactly-once settlement.",
+        "Designed a gossip protocol simulation with a web dashboard to visualize transaction hops across the mesh network.",
       ],
       technologies: ["Spring Boot", "Java 17", "Cryptography (RSA/AES)", "Mesh Networking", "H2 Database", "Thymeleaf"],
       gradient: "from-emerald-500 to-green-500",
