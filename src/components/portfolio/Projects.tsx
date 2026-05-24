@@ -1,9 +1,24 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Database, Mail, TrendingUp } from "lucide-react";
+import { Database, Mail, TrendingUp, WifiOff, Github } from "lucide-react";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "UPI Offline Mesh",
+      subtitle: "Spring Boot, Cryptography RSA/AES-GCM, Mesh Gossip",
+      icon: WifiOff,
+      description:
+        "Designed and built a deferred settlement mesh network backend that securely routes offline UPI payments device-to-device via simulated Bluetooth/WiFi Direct until connectivity is reached.",
+      highlights: [
+        "Built secure hybrid cryptography (RSA-OAEP + AES-256-GCM) protecting payment data across untrusted intermediate carrier nodes.",
+        "Engineered nanosecond-level double-spend prevention using atomic compare-and-set idempotency filters on ciphertext hashes.",
+        "Created a complete software-simulated network gossip protocol with virtual devices, TTL routing, and a dark dashboard UI.",
+      ],
+      technologies: ["Spring Boot 3.x", "Java 17", "AES-GCM / RSA", "Gossip Protocol", "H2 Database", "Thymeleaf"],
+      gradient: "from-emerald-500 to-green-500",
+      githubUrl: "https://github.com/thevishessh/UPI-without-internet",
+    },
     {
       title: "AI Email Reply Generator",
       subtitle: "Spring Boot, React.js, MongoDB, Google Gemini API",
@@ -18,6 +33,7 @@ const Projects = () => {
       ],
       technologies: ["React.js", "Spring Boot", "MongoDB", "Google Gemini API", "JWT", "OAuth2", "Tailwind CSS"],
       gradient: "from-blue-500 to-cyan-500",
+      githubUrl: "https://github.com/thevishessh",
     },
     {
       title: "Job Application Tracker API",
@@ -32,19 +48,20 @@ const Projects = () => {
         "Deployed on Render; documented all endpoints using Postman collection.",
       ],
       technologies: ["Spring Boot", "REST APIs", "JWT Authentication", "MySQL", "Spring Security", "Postman", "Render"],
-      gradient: "from-emerald-500 to-teal-500",
+      gradient: "from-teal-500 to-emerald-500",
+      githubUrl: "https://github.com/thevishessh",
     },
   ];
 
   return (
     <section id="projects" className="py-20 px-4">
-      <div className="container max-w-5xl mx-auto">
+      <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-12 space-y-4">
           <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Card
               key={index}
@@ -53,16 +70,29 @@ const Projects = () => {
               <div>
                 <div className={`h-2 bg-gradient-to-r ${project.gradient}`} />
                 <div className="p-6 space-y-4">
-                  <div className="flex items-start gap-4">
-                    <div className={`p-3 rounded-lg bg-gradient-to-br ${project.gradient} bg-opacity-10`}>
-                      <project.icon className="w-6 h-6 text-primary" />
+                  <div className="flex items-start justify-between gap-2">
+                    <div className="flex items-start gap-4">
+                      <div className={`p-3 rounded-lg bg-gradient-to-br ${project.gradient} bg-opacity-10`}>
+                        <project.icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold group-hover:text-primary transition-colors line-clamp-1">
+                          {project.title}
+                        </h3>
+                        <p className="text-sm text-muted-foreground">{project.subtitle}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
-                        {project.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground">{project.subtitle}</p>
-                    </div>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-primary transition-colors flex-shrink-0"
+                        aria-label="View Source Code"
+                      >
+                        <Github className="w-5 h-5" />
+                      </a>
+                    )}
                   </div>
 
                   <p className="text-muted-foreground leading-relaxed text-sm">{project.description}</p>
