@@ -1,41 +1,48 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Code, Database, Cloud, Wrench, Brain, Users } from "lucide-react";
+import { Code, Database, Server, Layout, Sparkles, Terminal } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Technical Skills",
+      title: "Languages",
       icon: Code,
-      skills: ["Java", "Spring Boot", "HTML", "CSS", "JavaScript", "React.js", "REST APIs"],
+      skills: ["Java", "JavaScript (ES6+)", "HTML5", "CSS3", "SQL"],
       color: "text-blue-500",
       bg: "bg-blue-500/10",
     },
     {
-      title: "Databases",
-      icon: Database,
-      skills: ["MySQL", "MongoDB"],
-      color: "text-green-500",
-      bg: "bg-green-500/10",
+      title: "Backend Development",
+      icon: Server,
+      skills: ["Spring Boot", "REST APIs", "JWT Authentication"],
+      color: "text-purple-500",
+      bg: "bg-purple-500/10",
     },
     {
-      title: "Developer Tools",
-      icon: Wrench,
-      skills: ["Git", "GitHub", "Postman", "VS Code", "IntelliJ IDEA", "Co-Pilot", "Bolt"],
-      color: "text-orange-500",
-      bg: "bg-orange-500/10",
-    },
-    {
-      title: "Core CS Concepts",
-      icon: Brain,
-      skills: ["OOP", "DSA", "System Design", "SDLC", "Agile", "Code Reviews", "Clean Code"],
+      title: "Frontend Development",
+      icon: Layout,
+      skills: ["React.js", "Tailwind CSS", "Bootstrap"],
       color: "text-pink-500",
       bg: "bg-pink-500/10",
     },
     {
-      title: "Soft Skills",
-      icon: Users,
-      skills: ["Curiosity", "Learning Agility", "Adaptability", "Analytical Thinking", "Collaboration"],
+      title: "Database",
+      icon: Database,
+      skills: ["MySQL", "MongoDB", "H2"],
+      color: "text-green-500",
+      bg: "bg-green-500/10",
+    },
+    {
+      title: "AI / LLM Tools",
+      icon: Sparkles,
+      skills: ["Google Gemini API", "GitHub Copilot", "Prompt Engineering"],
+      color: "text-amber-500",
+      bg: "bg-amber-500/10",
+    },
+    {
+      title: "Developer Tools",
+      icon: Terminal,
+      skills: ["Git", "GitHub", "Postman", "VS Code", "IntelliJ IDEA", "Vercel", "Render", "Chrome DevTools"],
       color: "text-cyan-500",
       bg: "bg-cyan-500/10",
     },

@@ -4,11 +4,23 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80; // height of navbar
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/5" />
       
@@ -30,20 +42,19 @@ const Hero = () => {
           </div>
 
           <div className="space-y-4">
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight">
               Hi, I'm{" "}
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Vishesh Srivastava
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              Full Stack Developer & Computer Science Student
+              Full-Stack Developer & Computer Science Student
             </p>
           </div>
 
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Passionate about building scalable applications with modern technologies.
-            Experienced in Java, Spring Boot, React.js, and cloud platforms.
+            Final-year B.Tech CSE student at AKTU, graduating June 2026, aiming for a Full-Stack Developer role. Skilled in Java, Spring Boot, and React.js with hands-on experience building real-world projects.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center items-center">

@@ -31,15 +31,10 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Final-year Computer Science student with strong foundations in Java, Spring Boot, 
-              JavaScript, React.js, SQL/NoSQL, and full-stack development. Experienced in building 
-              scalable applications, designing REST APIs, and delivering clean, maintainable code.
+              Final-year B.Tech CSE student at Dr. A.P.J. Abdul Kalam Technical University (AKTU), graduating in June 2026. Skilled in full-stack development with a focus on Java, Spring Boot, React.js, SQL, and NoSQL databases. Experienced in building scalable applications, designing secure REST APIs, and delivering clean, maintainable code.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Strong grasp of OOP, DSA, system design fundamentals, and debugging workflows. 
-              Skilled in collaborating across engineering, product, and design teams in Agile 
-              environments. Passionate about solving real-world engineering problems, learning 
-              new technologies, and contributing to impactful, user-centric software.
+              Equipped with a solid foundation in Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), database management, and agile methodologies. Active collaborator with hands-on experience working in engineering teams, performing code reviews, debugging, and improving product performance.
             </p>
           </div>
 

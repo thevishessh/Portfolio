@@ -11,14 +11,14 @@ const Experience = () => {
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full" />
         </div>
 
-        <Card className="p-8 hover:shadow-xl transition-all duration-300">
+        <Card className="p-6 md:p-8 hover:shadow-xl transition-all duration-300">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
             <div className="flex gap-4">
               <div className="p-3 rounded-lg bg-primary/10 h-fit">
                 <Briefcase className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-bold">Frontend Developer</h3>
+                <h3 className="text-xl font-bold">Frontend Developer Intern</h3>
                 <p className="text-lg text-primary font-semibold">Booqin</p>
               </div>
             </div>
@@ -29,7 +29,7 @@ const Experience = () => {
               </div>
               <div className="flex items-center gap-2 md:justify-end">
                 <MapPin className="w-4 h-4" />
-                <span>Mysore</span>
+                <span>Lucknow, India (Remote)</span>
               </div>
             </div>
           </div>
@@ -38,41 +38,31 @@ const Experience = () => {
             <li className="flex gap-3">
               <span className="text-primary mt-1.5">•</span>
               <span className="text-muted-foreground">
-                Built and optimized <strong className="text-foreground">20+ responsive UI components</strong> using 
-                HTML, CSS, JavaScript, Bootstrap, and Tailwind, improving page usability and load consistency 
-                across devices.
+                Built and delivered <strong className="text-foreground">20+ responsive web pages</strong> for a live product, translating Figma designs into pixel-accurate HTML/CSS/JS using Tailwind CSS and Bootstrap.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-primary mt-1.5">•</span>
               <span className="text-muted-foreground">
-                Collaborated with a <strong className="text-foreground">4-member engineering team</strong> in 
-                Agile sprints, contributing to feature planning, peer code reviews, and sprint demos.
+                Identified and fixed asset loading bottlenecks using <strong className="text-foreground">Chrome DevTools and Lighthouse</strong>, improving page performance scores.
               </span>
             </li>
             <li className="flex gap-3">
               <span className="text-primary mt-1.5">•</span>
               <span className="text-muted-foreground">
-                Improved page responsiveness and performance by <strong className="text-foreground">15–20%</strong>, 
-                ensuring consistency across desktop and mobile platforms.
-              </span>
-            </li>
-            <li className="flex gap-3">
-              <span className="text-primary mt-1.5">•</span>
-              <span className="text-muted-foreground">
-                Participated in debugging sessions, unit testing, and code reviews to ensure clean, 
-                maintainable, and high-quality code.
+                Collaborated in a <strong className="text-foreground">4-member agile team</strong> across daily standups, code reviews, and sprint demos — shipped features on schedule across a 4-week cycle.
               </span>
             </li>
           </ul>
 
           <div className="flex flex-wrap gap-2">
-            <Badge variant="secondary">HTML/CSS</Badge>
+            <Badge variant="secondary">HTML5 / CSS3</Badge>
             <Badge variant="secondary">JavaScript</Badge>
+            <Badge variant="secondary">Tailwind CSS</Badge>
             <Badge variant="secondary">Bootstrap</Badge>
-            <Badge variant="secondary">Tailwind</Badge>
+            <Badge variant="secondary">Chrome DevTools</Badge>
+            <Badge variant="secondary">Lighthouse</Badge>
             <Badge variant="secondary">Agile</Badge>
-            <Badge variant="secondary">Code Reviews</Badge>
           </div>
         </Card>
       </div>
